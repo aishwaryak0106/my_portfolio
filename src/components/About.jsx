@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { aboutInfo, assets, assetss } from '../assets/assets'
+import { aboutInfo, assets, assetss, educationData } from '../assets/assets'
 
 const About = () => {
     return (
@@ -42,9 +42,8 @@ const About = () => {
                         className='md:w-1/2'
                     >   
                         <div className='rounded-2xl p-8'>
-                            <h3 className='text-2xl font-semi-bold mb-6'>My Journey</h3>
-                            <p className='text-gray-300 mb-6'>I'm Oracle APEX and full-stack developer with experience building scalable, data-driven applications for businesses across different domains. My journey began with simple HTML/CSS pages and has grown into creating powerful web solutions using PL/SQL, Python, Java, and modern frameworks.</p>
-                            <p className='text-gray-300 mb-12'>When I'm not coding, you’ll find me learning new technologies, exploring automation and analytics, or improving my skills through personal projects and tech research. I believe in continuous learning and enjoy pushing the boundaries of what's possible with smart, efficient, and user-focused application development.</p>
+                            <h3 className='text-2xl font-semi-bold mb-6 text-purple'>My Journey</h3>
+                            <p className='text-gray-300 mb-6'>Oracle APEX and full-stack developer with expertise in PL/SQL, Python, Java, and modern frameworks. Experienced in building scalable, data-driven applications and dashboards for businesses. Passionate about learning emerging technologies, optimizing processes, and delivering innovative, user-focused solutions.</p>
                             
                             {/*Cards*/}
                             <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
@@ -62,6 +61,26 @@ const About = () => {
 
                             </div>
                         </div>
+
+                        <div className='rounded-2xl p-8'>
+  <h3 className='text-2xl font-semi-bold mb-6 text-purple'>Education</h3>
+  
+  {/*Cards*/}
+  <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+    {educationData.map((edu, index) => (
+      <div key={index} className='bg-dark-300 rounded- p-6 transition-transform duration-300 hover:translate-y-2 cursor-pointer'>
+        <div className='text-purple text-4xl mb-4'>
+          <edu.icon />
+        </div>
+        <h3 className='text-xl font-semibold'>{edu.degree}</h3>
+        <p className='text-gray-400'>{edu.institution}</p>
+        <p className='text-gray-400 text-purple'> • {edu.year}</p>
+        <p className='text-gray-400 mt-2'>{edu.description}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
                     </motion.div>
                 </div>
             </div>

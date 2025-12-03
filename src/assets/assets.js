@@ -1,7 +1,7 @@
-import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot, FaCubes, FaChartLine, FaJs, FaHtml5, FaPython, FaBrain, FaFileExcel, FaChartPie, FaCss3Alt, FaPhp, FaChartBar, FaTable } from 'react-icons/fa';
+import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot, FaCubes, FaChartLine, FaJs, FaHtml5, FaPython, FaBrain, FaFileExcel, FaChartPie, FaCss3Alt, FaPhp, FaChartBar, FaTable, FaGraduationCap, FaCertificate } from 'react-icons/fa';
 
 import me from '../assets/me.jpg';
-import aboutMe from '../assets/about.jpg';
+import aboutMe from '../assets/about.webp';
 import oracle_student from '../assets/oracle_student.jpg';
 import hate_speech from '../assets/hate_speech.jpg';
 import crm_data from '../assets/crm_data.jpg';
@@ -16,6 +16,7 @@ export const assets = {
 export const assetss = {
     aboutMe:aboutMe,
 }
+
 
 
 export const aboutInfo = [
@@ -38,6 +39,56 @@ export const aboutInfo = [
       color: 'text-blue'
     }
   ];
+
+
+
+export const educationData = [
+  {
+    degree: "Master of Computer Applications (MCA)",
+    institution: "Mahatma Gandhi University",
+    year: "Oct 2022",
+    description: "Focused on advanced software development, database systems, and enterprise applications.",
+    icon: FaGraduationCap,
+    color: "purple"
+  },
+  {
+    degree: "Bachelor of Computer Applications (BCA)",
+    institution: "Kannur University",
+    year: "Apr 2020",
+    description: "Built foundational skills in programming, software engineering, and data structures.",
+    icon: FaGraduationCap,
+    color: "purple"
+  }
+];
+
+
+
+export const certificationsData = [
+  {
+    title: "Oracle APEX Cloud Developer – Certified Professional",
+    provider: "Oracle University",
+    year: "Aug 2025",
+    description: "Validated expertise in building enterprise apps using Oracle APEX & PL/SQL.",
+    icon: FaCertificate,
+    color: "purple"
+  },
+  {
+    title: "Autosar Diagnostics (DEM, DCM, OBD, UDS)",
+    provider: "Udemy",
+    year: "Jul 2023",
+    description: "Gained practical understanding of vehicle diagnostics architecture & workflows.",
+    icon: FaCertificate,
+    color: "purple"
+  },
+  {
+    title: "Programming for Everybody (Getting Started With Python)",
+    provider: "Coursera",
+    year: "May 2021",
+    description: "Strengthened Python fundamentals with hands-on coding exercises.",
+    icon: FaCertificate,
+    color: "purple"
+  }
+];
 
 
 

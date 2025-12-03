@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { MdOpacity } from 'react-icons/md'
-import { assets } from '../assets/assets'
+import { assets } from '../assets/assets';
 
 
 const Hero = () => {
@@ -22,7 +22,7 @@ const Hero = () => {
                 </h1>
                 <h2 className='text-2xl md:text-4xl font-semibold mb-6 typewriter'>Full Stack Developer</h2>
                 <p className='text-lg text-gray-300 mb-8'>
-                    I create stunning web experiences with modern technologies and innovative design.
+                    Crafting scalable web apps and data-driven solutions with innovative design.
                 </p>
                 <div className='flex space-x-4'>
                     <a href="#projects" className='px-6 py-3 bg-purple rounded-lg font-medium hover:bg-purple-700 transition duration-300'>View Work</a>

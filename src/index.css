@@ -1,13 +1,19 @@
+/* 1. Imports first */
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import "tailwindcss";
 
+/* 2. Smooth scroll */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* adjust to match navbar height */
+}
 
-
+/* 3. Global font */
 *{
   font-family: Saira, sans-serif;
 }
 
+/* 4. Theme colors */
 @theme{
   --color-dark-100:#1a1a1a;
   --color-dark-200:#1f1f1f;
@@ -18,17 +24,18 @@
   --color-blue:#3B82F6;
 }
 
+/* 5. Typewriter effect */
 .typewriter {
   overflow: hidden;
   border-right: 0.15em solid #8B5CF6;
   white-space: nowrap;
   width: 0;
-  animation: typing 3s steps(20,end)forwards, blink-caret 0.75s step-end 4;
+  animation: typing 3s steps(20,end) forwards, blink-caret 0.75s step-end 4;
 }
 
 @keyframes typing {
   from { width: 0; }
-  to   { width: 15ch; } /*Match the nuber of characters*/
+  to   { width: 15ch; } /* Match the number of characters */
 }
 
 @keyframes blink-caret {
