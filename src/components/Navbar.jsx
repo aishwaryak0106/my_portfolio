@@ -42,8 +42,8 @@ const Navbar = () => {
 
           {/* Download CV button */}
           <a
-            href="/AISHWARYA_K.pdf"
-            download="AISHWARYA_K.pdf"
+            href="/AISHWARYA_KAVIL.pdf"
+            download="AISHWARYA_KAVIL.pdf"
             className="px-4 py-2 bg-gradient-to-r from-purple to-pink text-white rounded-lg font-medium shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
           >
             Download CV
@@ -81,8 +81,8 @@ const Navbar = () => {
 
           {/* Mobile Download CV */}
           <a
-            href="/AISHWARYA_K.pdf"
-            download="AISHWARYA_K.pdf"
+            href="/AISHWARYA_KAVIL.pdf"
+            download="AISHWARYA_KAVIL.pdf"
             className="px-6 py-3 bg-gradient-to-r from-purple to-pink text-white rounded-lg font-medium shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
           >
             Download CV
